@@ -782,7 +782,7 @@
                         </div>
                     </div>
                     </div>
-                        </a>
+                </a>
             </div>
             </div>
       </div>
@@ -826,7 +826,7 @@
             });
         });
 
-        var countDownDateBdg = new Date("Feb 17, 2025 19:00:00").getTime();
+        var countDownDateBdg = new Date("Feb 17, 2025 23:59:00").getTime();
         setInterval(function() {
             var now = new Date().getTime();
             var distance = countDownDateBdg - now;
@@ -846,7 +846,7 @@
             }
         }, 1000);
         
-        var countDownJkt = new Date("Feb 17, 2025 22:00:00").getTime();
+        var countDownJkt = new Date("Feb 17, 2025 23:59:00").getTime();
         setInterval(function() {
             var now = new Date().getTime();
             var distance = countDownJkt - now;
@@ -866,7 +866,7 @@
             }
         }, 1000);
         
-        var countDownSmg = new Date("Feb 17, 2025 22:00:00").getTime();
+        var countDownSmg = new Date("Feb 18, 2025 23:59:00").getTime();
         setInterval(function() {
             var now = new Date().getTime();
             var distance = countDownSmg - now;
@@ -885,18 +885,6 @@
                 document.querySelector(".minutes").innerHTML = '00';
             }
         }, 1000);
-
-        document.querySelectorAll('.toLihat').forEach(hit => {
-            hit.addEventListener('click', function() {
-                const nextSection = document.querySelector("#next-section");
-                if (nextSection) {
-                    window.scrollTo({
-                        top: nextSection.offsetTop - 50,
-                        behavior: "smooth"
-                    });
-                }
-            });
-        });
       </script>
 </body>
 </html>
