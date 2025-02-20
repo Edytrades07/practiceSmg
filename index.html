@@ -870,9 +870,9 @@
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
                 
-            document.querySelector(".days-bandung").innerHTML = days;
-            document.querySelector(".hours-bandung").innerHTML = hours;
-            document.querySelector(".minutes-bandung").innerHTML = minutes;
+            document.querySelector(".days-bandung").innerHTML = String(days).padStart(2,'0');
+            document.querySelector(".hours-bandung").innerHTML = String(hours).padStart(2, '0');
+            document.querySelector(".minutes-bandung").innerHTML = String(minutes).padStart(2, '0');
 
             if(distance < 0){
                 document.querySelector(".days-bandung").innerHTML = '00';
@@ -890,9 +890,9 @@
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
                 
-            document.querySelector(".days-jakarta").innerHTML = days;
-            document.querySelector(".hours-jakarta").innerHTML = hours;
-            document.querySelector(".minutes-jakarta").innerHTML = minutes;
+            document.querySelector(".days-jakarta").innerHTML = String(days).padStart(2,'0');
+            document.querySelector(".hours-jakarta").innerHTML = String(hours).padStart(2, '0');
+            document.querySelector(".minutes-jakarta").innerHTML = String(minutes).padStart(2, '0');
         
             if(distance < 0){
                 document.querySelector(".days-jakarta").innerHTML = '00';
@@ -910,9 +910,9 @@
             var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
                 
-            document.querySelector(".days").innerHTML = days;
-            document.querySelector(".hours").innerHTML = hours;
-            document.querySelector(".minutes").innerHTML = minutes;
+            document.querySelector(".days").innerHTML = String(days).padStart(2,'0');
+            document.querySelector(".hours").innerHTML = String(hours).padStart(2,'0');
+            document.querySelector(".minutes").innerHTML = String(minutes).padStart(2, '0');
         
             if(distance < 0){
                 document.querySelector(".days").innerHTML = '00';
